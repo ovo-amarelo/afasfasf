@@ -1,15 +1,13 @@
-script.js
-
 const botao = document.getElementById('botao_tema');
 
-function alternarModo () {
+function alternarModo() {
   document.body.classList.toggle('modo_escuro');
 
-  if(document.body.classList.contains('modo_escuro')) {
+  if (document.body.classList.contains('modo_escuro')) {
     botao.textContent = 'Modo Claro';
-  }else {
+  } else {
     botao.textContent = 'Modo Escuro';
   }
- 
 }
+
 botao.addEventListener('click', alternarModo);
