@@ -1,43 +1,88 @@
-body{
-  background-color: #ACC8E5;
-  color: #451111;
+body {
+  background-color: seashell;
+  color: maroon;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:50px
+  margin: 50px;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-h1{
-  font-size: 70px;
+
+h1 {
+  font-size: 40px;
   text-align: center;
   font-family: "Molle", cursive;
   font-weight: bold;
 }
-p{
-  text-align: justify
+
+h2 {
+  margin-top: 30px;
 }
-img{
+
+p {
+  text-align: justify;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+ul {
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+img {
   margin-top: 20px;
   max-width: 80%;
-   }
-a{
-  text-decoration: none;
-  color: #ACC8E5;
-  text-align: center;
+  border-radius: 8px;
 }
-a:hover{
+
+a {
+  text-decoration: none;
+  color: maroon;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+a:hover {
   color: blue;
 }
+
+button {
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos do Modo Escuro */
 body.modo_escuro {
-  background-color: black;
+  background-color: #121212;
   color: seashell;
 }
 
+body.modo_escuro a {
+  color: #ffb3b3;
+}
 
-button {
-  border: 2px yellow;
-  border-radius: 20px;
-  width: 80px;
-  position: fixed;
-  right: 10px;
-  top: 50px
+body.modo_escuro a:hover {
+  color: #4da6ff;
+}
+
+body.modo_escuro button {
+  background-color: #333;
+  color: white;
+  border-color: #4caf50;
 }
