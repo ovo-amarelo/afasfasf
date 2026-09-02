@@ -1,6 +1,6 @@
 body {
-  background-color: seashell;
-  color: maroon;
+  background-color: light blue;
+  color: #6A5ACD ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +39,7 @@ img {
 
 a {
   text-decoration: none;
-  color: maroon;
+  color: #6A5ACD;
   text-align: center;
   font-weight: bold;
   margin-top: 10px;
